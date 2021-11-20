@@ -7,16 +7,7 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 
-interface IFood {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  available: boolean;
-  image: string;
-}
-
-type InputFood = Omit<IFood, 'id' | 'available'>;
+import { InputFood } from '../../pages/Dashboard';
 
 interface ModalAddFoodProps {
   handleAddFood: (food: InputFood) => void;
